@@ -3,54 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
-    background-color: moccasin;
-    font-family: 'Times New Roman', Times, serif;
-    overflow-x: hidden;
-}
+     background-color: moccasin;
+      font-family: 'Times New Roman', Times, serif;
+       overflow-x: hidden; } 
 
-/**navegacion menu**/
-#header{
-    position: relative;
-    width: 100%;
-}
-
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 9999;
-}
-
-.btnmenu{display: none;}
-.menu .lobox{margin-left: 30px;}
-.menu .logobox h1 > a{
-    text-decoration: none;
-    color: moccasin;
-    font-size: 30px;
-    font-weight: 400;
-}
-.menu .logobox h1 > a > i{ color: moccasin;margin-right: 10px;}
-.menu .listcontainer{ margin-right: 30px;}
-.menu .listcontainer .lista { display: flex;}
-.menu .listcontainer .lista li{list-style: none;}
-.menu .listcontainer .lista li a{
-    text-decoration: none;
-    color: moccasin;
-    margin: 0px  20px;
-    font-size: 15px;
-    transition: 300ms;
-}
-
-.menu .listcontainer .lista li a :hover{color: moccasin;}
-.menu .listcontainer .lista li a .activo{color: black;}
 
 /**imagen**/
 .imagen{
@@ -131,7 +88,7 @@ body{
 .contenidogaleria{
     width: 90%;
     margin: 30px auto;
-
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(1, auto);
@@ -170,11 +127,68 @@ footer .foot p{
     height: 45vh;
 }
 
+/**formmulario_contacto**/
 
+.menu_contacto{
+    background-color: moccasin;
+    background-attachment: fixed;
+    margin: 0;
+}
 
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 150px;
+    border-radius: 10px;
+}
 
-@media only screen and (max-width: 560px){
-.imagen{ width: 100%;
-height: 100%;
-justify-content: center;}
+h2{
+    color: #000;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.boton{
+    background: #31384a;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+/**lugares**/
+
+.texto{ 
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.lugares{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    margin: 80px 50px;
 }
